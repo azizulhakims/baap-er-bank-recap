@@ -6,6 +6,10 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     const newWithdrawAmount = getInputFieldValueById('withdeaw-field');
     const previusWithdeawTotal = getTextElementValueById('withdeaw-total');
 
+if(newWithdrawAmount> previusWithdeawTotal){
+    alert('Baper Account a ato taka nai')
+    return;
+}
     const newWithdeawTotal = previusWithdeawTotal + newWithdrawAmount;
     setTextElementValueId('withdeaw-total', newWithdeawTotal);
 
